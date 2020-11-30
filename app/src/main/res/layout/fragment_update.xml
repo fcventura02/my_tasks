@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.update.UpdateFragment"
+    android:background="@color/teal_700"
+    >
+
+    <EditText
+        android:id="@+id/updateTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/tarefas"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_update_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/importante"
+        app:layout_constraintStart_toStartOf="@+id/updateTask"
+        app:layout_constraintTop_toBottomOf="@+id/updateTask" />
+
+    <CheckBox
+        android:id="@+id/cb_update_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:text="@string/completado"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_update_important"
+        app:layout_constraintEnd_toEndOf="@+id/updateTask"
+        app:layout_constraintStart_toEndOf="@+id/cb_update_important"
+        app:layout_constraintTop_toTopOf="@+id/cb_update_important"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btm_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/atualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb_update_important"
+        app:layout_constraintTop_toBottomOf="@+id/updateTask" />
+</androidx.constraintlayout.widget.ConstraintLayout>
